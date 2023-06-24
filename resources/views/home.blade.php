@@ -4,12 +4,16 @@
         <div class="container">
           <div class="row gy-4 d-flex justify-content-between">
             <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-              <h2 data-aos="fade-up">Your Lightning Fast Delivery Partner</h2>
-              <p data-aos="fade-up" data-aos-delay="100">Facere distinctio molestiae nisi fugit tenetur repellat non praesentium nesciunt optio quis sit odio nemo quisquam. eius quos reiciendis eum vel eum voluptatem eum maiores eaque id optio ullam occaecati odio est possimus vel reprehenderit</p>
+              
+              <center>
+                <h2 data-aos="fade-up">Your Lightning Fast <br> QR-Code Generator</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Unlock Seamless Sharing: Transform Any Text or Link into Scannable QR Codes with Ease!</p>
+              </center>
     
-              <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-                <input type="text" class="form-control" placeholder="ZIP code or CitY">
-                <button type="submit" class="btn btn-primary">Search</button>
+              <form action="{{ route('convertAction') }}" method="POST" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+                @csrf
+                <input type="text" name="content" class="form-control" placeholder="Paste link or text">
+                <button type="submit" class="btn btn-primary">Get</button>
               </form>
     
               <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
@@ -46,7 +50,9 @@
             </div>
     
             <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-              <img src="assets/img/hero-img.svg" class="img-fluid mb-3 mb-lg-0" alt="">
+              <center>
+                <img src="images/qr-code.jpg" class="img-fluid mb-3 mb-lg-0" alt="" width="200px" style="border-radius: 5px;">
+              </center>
             </div>
     
           </div>
