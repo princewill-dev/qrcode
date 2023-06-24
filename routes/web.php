@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NavController;
-use App\Http\Controllers\QrcodeController;
+use App\Http\Controllers\GenerateCodeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +21,4 @@ Route::get('/about', [NavController::class, 'about']);
 
 Route::get('/contact', [NavController::class, 'contact']);
 
-Route::post('/convert', [QrcodeController::class, 'Qrfunction'])->name("convertAction");
+Route::post('/convert', [GenerateCodeController::class, 'Qrfunction'])->name("convertAction");
