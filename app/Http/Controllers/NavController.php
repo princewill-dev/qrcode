@@ -23,10 +23,10 @@ class NavController extends Controller
 
     public function showcode()
     {
-        return view('code');
+        return view('home');
     }
 
-    
+
 }
 
 

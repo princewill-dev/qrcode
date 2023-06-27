@@ -36,7 +36,7 @@ class GenerateCodeController extends Controller
 
         //return redirect("code/")->with('success', 'Here is your QR-code');
 
-        return redirect("code/$generate_qr_code_id")->with('success', 'Here is your QR-code');
+        return redirect("/$generate_qr_code_id")->with('success', 'Here is your QR-code');
 
 
     }
