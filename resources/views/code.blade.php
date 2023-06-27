@@ -1,4 +1,4 @@
-<x-laout>
+<x-layout>
 
 
     <main id="main">
@@ -95,4 +95,4 @@
       </main>
 
 
-</x-laout>
+</x-layout>

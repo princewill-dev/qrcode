@@ -6,16 +6,24 @@ use Illuminate\Http\Request;
 
 class NavController extends Controller
 {
-    public function home() {
+    public function home()
+    {
         return view('home');
     }
 
-    public function about() {
+    public function about()
+    {
         return view('about');
     }
 
-    public function contact() {
+    public function contact()
+    {
         return view('contact');
+    }
+
+    public function showcode()
+    {
+        return view('code');
     }
 }
 
