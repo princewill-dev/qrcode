@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Crypt;
 class GenerateCodeController extends Controller
 {
 
-    private function QrContentEncryption($qr_data)
+    private function QrContentEncryption($validate_qr_data)
     {
         $encrypt_content = Crypt::encryptString($validate_qr_data['content']);
         return $encrypt_content;
@@ -27,13 +27,16 @@ class GenerateCodeController extends Controller
 
         $encrypted_qr_content = $this->QrContentEncryption($validate_qr_data);
 
+        //$encryptedNoteData = $this->encryptNoteData($noteData);
+
         $generate_code = new GenerateCode;
         $generate_code->qrcode_id = $generate_qr_code_id;
+        $generate_code->content = $encrypted_qr_content;
         $generate_code->save();
 
-        
+        //return redirect("code/")->with('success', 'Here is your QR-code');
 
-
+        return redirect("code/$generate_qr_code_id")->with('success', 'Here is your QR-code');
 
 
     }

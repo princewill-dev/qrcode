@@ -23,4 +23,4 @@ Route::get('/contact', [NavController::class, 'contact']);
 
 Route::post('/convert', [GenerateCodeController::class, 'Qrfunction'])->name("convertAction");
 
-Route::get('/code', [NavController::class, 'showcode']);
+Route::get('/code/{id}', [NavController::class, 'showcode'])->name("code.show");

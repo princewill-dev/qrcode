@@ -25,6 +25,8 @@ class NavController extends Controller
     {
         return view('code');
     }
+
+    
 }
 
 
