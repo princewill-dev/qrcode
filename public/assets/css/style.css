@@ -1,0 +1,13 @@
+/* Styles for desktop */
+.home-qr {
+    width: 400px; /* Set the default width for desktop */
+    border-radius: 5px;
+  }
+  
+  /* Styles for mobile */
+  @media (max-width: 767px) {
+    .home-qr {
+      width: 200px;
+    }
+  }
+  
