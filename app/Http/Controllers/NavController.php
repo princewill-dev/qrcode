@@ -21,7 +21,7 @@ class NavController extends Controller
         return view('contact');
     }
 
-    public function showcode()
+    public function showqrcode()
     {
         return view('home');
     }

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NavController;
+use App\Http\Controllers\ShowqrController;
 use App\Http\Controllers\GenerateCodeController;
 
 /*
@@ -23,4 +24,6 @@ Route::get('/contact', [NavController::class, 'contact']);
 
 Route::post('/convert', [GenerateCodeController::class, 'Qrfunction'])->name("convertAction");
 
-Route::get('/{id}', [NavController::class, 'showcode'])->name("code.show");
+Route::get('/{qrcode_id}', [ShowqrController::class, 'showcode'])->name("code.show");
+
+Route::get('/qr/{qrcode_id}', [NavController::class, 'showqrcode'])->name("code.showqr");
