@@ -13,13 +13,11 @@
                 <h2 data-aos="fade-up">Here is your QR-Code</h2>
                 
                 <img src="/qr_images/{{$qr_id}}.svg" class="img-fluid mb-3 mb-lg-0 home-qr" alt="" style="padding: 20px; background: #fff;">
-
-                {{-- <div class="img-fluid mb-3 mb-lg-0 home-qr">{!! $qr_data !!}</div> --}}
   
                 <br>
                 <br>
   
-                <a href="#" type="submit" class="btn btn-primary btn-small">Download</a>
+                <a href="/download/{{$qr_id}}" type="submit" class="btn btn-primary btn-small">Download</a>
   
                 <br>
                 <br>

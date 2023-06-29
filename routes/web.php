@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NavController;
 use App\Http\Controllers\ShowqrController;
+use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\GenerateCodeController;
 
 /*
@@ -27,3 +28,7 @@ Route::post('/convert', [GenerateCodeController::class, 'Qrfunction'])->name("co
 Route::get('/{qrcode_id}', [ShowqrController::class, 'showcode'])->name("code.show");
 
 Route::get('/qr/{qrcode_id}', [NavController::class, 'showqrcode'])->name("code.showqr");
+
+Route::get('/download/{qrcode_id}', [DownloadController::class, 'downloadFunction'])->name("download_qr");
+
+// Route::get('test', fn () => phpinfo());
