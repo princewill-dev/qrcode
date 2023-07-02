@@ -22,7 +22,7 @@
                 <br>
                 <br>
   
-                <!-- <p data-aos="fade-up" data-aos-delay="100">Send a copy to your email address <br> {{ $qr_data }}</p> -->
+                <p data-aos="fade-up" data-aos-delay="100">Thank you for using our service</p>
                 
               </center>
   
