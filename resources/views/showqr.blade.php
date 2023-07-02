@@ -22,15 +22,15 @@
                 <br>
                 <br>
   
-                <p data-aos="fade-up" data-aos-delay="100">Send a copy to your email address <br> {{ $qr_data }}</p>
+                <!-- <p data-aos="fade-up" data-aos-delay="100">Send a copy to your email address <br> {{ $qr_data }}</p> -->
                 
               </center>
   
-              <form action="{{ route('convertAction') }}" method="POST" class="form-search d-flex align-items-stretch mb-3">
+              <!-- <form action="{{ route('convertAction') }}" method="POST" class="form-search d-flex align-items-stretch mb-3">
                 @csrf
                 <input type="text" name="content" class="form-control" placeholder="Enter email address">
                 <button type="submit" class="btn btn-primary">Get</button>
-              </form>
+              </form> -->
   
             </div>
   
