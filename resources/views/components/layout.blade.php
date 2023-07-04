@@ -12,14 +12,20 @@
 
   <meta property="og:title" content="QR Code Generator" />
   <meta property="og:description" content="Transform Any Text or Link into Scannable QR Codes with Ease!" />
-  <meta property="og:image" content="https://qrcode.princewilldev.com/homepage.png" />
+  <meta property="og:image" content="https://princewilldev.com/images/qrcodehomepage.png" />
   <meta property="og:url" content="https://qrcode.princewilldev.com/" />
   <meta property="og:type" content="website" />
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@princewill_dev">
+  <meta name="twitter:title" content="QR Code Generator">
+  <meta name="twitter:description" content="Transform Any Text or Link into Scannable QR Codes with Ease!">
+  <meta name="twitter:image" content="https://princewilldev.com/images/qrcodehomepage.png">
 
 
   <!-- Favicons -->
   <link href="{{ asset('/images/favicon.png') }}" rel="icon">
-  {{-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> --}}
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
