@@ -5,13 +5,21 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Create Your QR-codes</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>QR Code Generator</title>
+  <meta content="Transform Any Text or Link into Scannable QR Codes with Ease!" name="description">
+  <meta content="Qr Code Generator, Convert to QR code, generate qrcode, text to qrcode, convert links to QR code, qrcode, generate QR code, code to qr code" name="keywords">
+
+
+  <meta property="og:title" content="QR Code Generator" />
+  <meta property="og:description" content="Transform Any Text or Link into Scannable QR Codes with Ease!" />
+  <meta property="og:image" content="https://qrcode.princewilldev.com/homepage.png" />
+  <meta property="og:url" content="https://qrcode.princewilldev.com/" />
+  <meta property="og:type" content="website" />
+
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
+  {{-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> --}}
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
