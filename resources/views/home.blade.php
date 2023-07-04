@@ -22,23 +22,23 @@
             <button type="submit" class="btn btn-primary">Get</button>
           </form>
 
-          <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+          <!--<div class="row gy-4" data-aos="fade-up" data-aos-delay="400">-->
 
-            <div class="col-lg-6">
-              <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Geneared</p>
-              </div>
-            </div>
+          <!--  <div class="col-lg-6">-->
+          <!--    <div class="stats-item text-center w-100 h-100">-->
+          <!--      <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>-->
+          <!--      <p>Geneared</p>-->
+          <!--    </div>-->
+          <!--  </div>-->
 
-            <div class="col-lg-6">
-              <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Downloads</p>
-              </div>
-            </div>
+          <!--  <div class="col-lg-6">-->
+          <!--    <div class="stats-item text-center w-100 h-100">-->
+          <!--      <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>-->
+          <!--      <p>Downloads</p>-->
+          <!--    </div>-->
+          <!--  </div>-->
 
-          </div>
+          <!--</div>-->
         </div>
 
         <div class="col-lg-6 order-1 order-lg-2 hero-img " data-aos="zoom-out">

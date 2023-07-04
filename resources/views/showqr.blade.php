@@ -12,17 +12,19 @@
                 
                 <h2 data-aos="fade-up">Here is your QR-Code</h2>
                 
-                <img src="/qr_images/{{$qr_id}}.svg" class="img-fluid mb-3 mb-lg-0 home-qr" alt="" style="padding: 20px; background: #fff;">
+                <img src="/qr_images/{{$qr_id}}.png" class="img-fluid mb-3 mb-lg-0 home-qr" alt="" >
   
                 <br>
                 <br>
   
-                <a href="/download/{{$qr_id}}" type="submit" class="btn btn-primary btn-small">Download</a>
+                <a href="/download/{{$qr_id}}" type="submit" class="btn btn-success btn-small">Download</a>
   
                 <br>
                 <br>
   
                 <p data-aos="fade-up" data-aos-delay="100">Thank you for using our service</p>
+                
+                <a href="/" class="btn btn-primary">Generate More QR Codes</a>
                 
               </center>
   
