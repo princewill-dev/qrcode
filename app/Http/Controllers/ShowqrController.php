@@ -20,7 +20,9 @@ class ShowqrController extends Controller
 
             //$qr_data = QrCode::generate("$decrypted_qr_content");
 
-            $qr_data = QrCode::generate("$decrypted_qr_content", public_path("qr_images/$qr_id.svg") );
+            // $qr_data = QrCode::format('png')->size(300)->generate("$decrypted_qr_content", public_path("qr_images/$qr_id.png") );
+            
+            $qr_data = QrCode::format('png')->size(300)->margin(3)->backgroundColor(255, 255, 255)->generate("$decrypted_qr_content", public_path("qr_images/$qr_id.png"));
 
             return view('showqr', compact('decrypted_qr_content', 'qr_id', 'qr_data'));
 

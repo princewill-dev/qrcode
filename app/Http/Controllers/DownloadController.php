@@ -14,8 +14,8 @@ class DownloadController extends Controller
 
         if ($find_qr_file) {
 
-            $filePath = public_path("qr_images/$qrcode_id.svg");
-            $fileName = "My-Qrcode-$qrcode_id.svg";
+            $filePath = public_path("qr_images/$qrcode_id.png");
+            $fileName = "My-Qrcode-$qrcode_id.png";
             
             return Response::download($filePath, $fileName);
 
