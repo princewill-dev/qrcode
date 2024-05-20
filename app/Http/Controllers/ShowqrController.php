@@ -15,16 +15,13 @@ class ShowqrController extends Controller
 
         if ($find_qr_data) {
 
-            $decrypted_qr_content = Crypt::decryptString($find_qr_data->content);
+            $qr_content = $find_qr_data->content;
             $qr_id = $find_qr_data->qrcode_id;
 
-            //$qr_data = QrCode::generate("$decrypted_qr_content");
+            $qr_data = QrCode::format('svg')->size(300)->margin(3)->backgroundColor(255, 255, 255)->generate($qr_content);
+            $qr_data = base64_encode($qr_data);
 
-            // $qr_data = QrCode::format('png')->size(300)->generate("$decrypted_qr_content", public_path("qr_images/$qr_id.png") );
-            
-            $qr_data = QrCode::format('png')->size(300)->margin(3)->backgroundColor(255, 255, 255)->generate("$decrypted_qr_content", public_path("qr_images/$qr_id.png"));
-
-            return view('showqr', compact('decrypted_qr_content', 'qr_id', 'qr_data'));
+            return view('showqr', compact('qr_content', 'qr_id', 'qr_data'));
 
         } else {
             return redirect("/")->with('failure', 'Invalid QR code');

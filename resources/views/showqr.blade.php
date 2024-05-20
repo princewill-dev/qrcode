@@ -12,12 +12,14 @@
                 
                 <h2 data-aos="fade-up">Here is your QR-Code</h2>
                 
-                <img src="/qr_images/{{$qr_id}}.png" class="img-fluid mb-3 mb-lg-0 home-qr" alt="" >
+                <!-- <img src="/qr_images/{{$qr_id}}.png" class="img-fluid mb-3 mb-lg-0 home-qr" alt="" > -->
+
+                <img src="data:image/svg+xml;base64,{{ $qr_data }}" alt="QR Code" class="img-fluid mb-3 mb-lg-0 home-qr">
   
                 <br>
                 <br>
   
-                <a href="/download/{{$qr_id}}" type="submit" class="btn btn-success btn-small">Download</a>
+                <!-- <a href="/download/{{$qr_id}}" type="submit" class="btn btn-success btn-small">Download</a> -->
   
                 <br>
                 <br>
