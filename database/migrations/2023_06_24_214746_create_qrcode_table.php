@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('qrcode', function (Blueprint $table) {
             $table->id();
-            $table->longText('qrcode_id')->unique();
+            $table->string('qrcode_id', 255)->unique();
             $table->string('is_email_sent')->default(0);
-            $table->longText('email_sent_to')->default('none');
+            $table->longText('email_sent_to')->nullable();
             $table->string('status')->default('active');
             $table->longText('content');
             $table->string('content_type')->default('Na');
